@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if pgrep -x gammastep >/dev/null
+then
+    echo '{"text": "", "tooltip": "Gammastep active", "class": "on"}'
+else
+    echo '{"text": "󰝟", "tooltip": "Gammastep off", "class": "off"}'
+fi

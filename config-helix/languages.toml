@@ -1,0 +1,160 @@
+[[language]]
+name = "bash"
+shebangs = ["sh", "bash", "ksh"]
+formatter = { command = "shfmt" }
+
+[[language]]
+name = "clojure"
+formatter = { command = "zprint" }
+auto-format = false
+
+[[language]]
+name = "fennel"
+scope = "source.fennel"
+file-types = ["fnl"]
+roots = ["flsproject.fnl"]
+language-servers = ["fennel-ls"]
+
+[[language]]
+name = "go"
+roots = ["go.work", "go.mod"]
+auto-format = true
+language-servers = ["gopls"]
+formatter = { command = "sh", args = ["-c", "gofumpt | goimports"] }
+
+[[language]]
+name = "hcl"
+formatter = { command = "terraform", args = ["fmt", "-"] }
+
+[[language]]
+name = "janet"
+file-types = ["janet", "jdn"]
+shebangs = ["janet"]
+scope = "source.janet"
+roots = ["project.janet"]
+language-servers = ["janet-lsp"]
+auto-format = false
+formatter = { command = "janet-format", args = ["-"] }
+
+[[language]]
+name = "javascript"
+language-servers = ["typescript-language-server"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+
+[[language]]
+name = "json"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "json"] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+language-servers = ["typescript-language-server"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "babel"] }
+
+[[language]]
+name = "markdown"
+file-types = ["md"]
+language-servers = ["mdlsp", "typos-lsp"]
+auto-format = false
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+
+
+[[language]]
+name = "python"
+language-servers = ["pylsp"]
+rulers = [100]
+formatter = { command = "ruff", args = [
+  "format",
+  "--line-length",
+  "100",
+  "--stdin-filename",
+  "-",
+] }
+
+
+[[language]]
+name = "ruby"
+formatter = { command = "rubocop", args = [
+  "--stdin",
+  "foo.rb",
+  "-a",
+  "--stderr",
+  "--fail-level",
+  "fatal",
+  "--server",
+] }
+auto-format = false
+language-servers = [{ name = "solargraph" }]
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+rulers = [100]
+
+[[language]]
+name = "toml"
+language-servers = ["tombi"]
+# formatter = { command = "tombi", args = ["format", "-"] }
+
+[[language]]
+name = "typescript"
+language-servers = ["typescript-language-server"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "tsx"
+language-servers = ["typescript-language-server"]
+auto-format = true
+formatter = { command = "prettier", args = ["--parser", "typescript"] }
+
+[[language]]
+name = "xml"
+formatter = { command = "xmllint", args = ["--format", "-"] }
+auto-format = true
+
+[[language]]
+name = "yaml"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "yaml"] }
+auto-format = true
+
+[language-server.gopls]
+command = "gopls"
+
+[language-server.gopls.config]
+gofumpt = true
+staticcheck = true
+
+[language-server.janet-lsp]
+command = "janet-lsp"
+args = ["--stdio"]
+
+[language-server.pylsp.config.pylsp]
+plugins.pyls_mypy.enabled = true
+plugins.pyls_mypy.live_mode = true
+plugins.flake8.maxLineLength = 100
+plugins.pycodestyle.maxLineLength = 100
+
+[language-server.rust-analyzer.config]
+check.workspace = false
+check.command = "clippy"
+procMacro.enable = true
+diagnostics.experimental.enable = false
+
+[language-server.solargraph]
+config.diagnostics = false
+config.formatting = false
+
+[language-server.typos-lsp]
+command = "typos-lsp"
+environment = { "RUST_LOG" = "error" }
+config.config = "~/.config/typos.toml"
+# How typos are rendered in the editor, can be one of an Error, Warning, Info or Hint.
+config.diagnosticSeverity = "Warning"
+
+[language-server.typescript-language-server.config]
+preferences.importModuleSpecifier = "relative"
+preferences.quotePreference = "single"
+suggest.completeFunctionCalls = true

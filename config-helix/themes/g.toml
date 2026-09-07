@@ -1,0 +1,16 @@
+"comment" = { fg = "mid-grey", modifiers = ["italic"] }
+"ui.cursor" = { bg = "pale-blue" }
+"ui.linenr" = { bg = "light-grey", fg = "dark-grey" }
+"ui.virtual.ruler" = { bg = "light-grey" }
+"ui.selection" = { bg = "mid-grey", fg = "black" }
+
+"diagnostic.warning" = { fg = "red", underline = { color = "orange", style = "curl" }}
+"diagnostic.error" = "red"
+
+
+[palette]
+"orange" = "#ed9999"
+"pale-blue" = "#bcbced"
+"light-grey" = "#ddddd8"
+"mid-grey" = "#999999"
+"dark-grey" = "#777797"

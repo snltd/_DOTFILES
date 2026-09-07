@@ -1,0 +1,132 @@
+# Syntax highlighting
+"type" = { fg = "dark_green" }
+"type.builtin" = { fg = "dark_green", modifiers = ["italic"] }
+# "type.enum" = { fg = "dark_green", modifiers = ["bold"] }
+"type.enum.variant" = { fg = "dark_green", modifiers = ["bold"] }
+"constant" = { fg = "dark_sand", modifiers = ["bold"] }
+"string" = { fg = "mid_blue", modifiers = ["italic"] }
+"string.special.symbol" = { fg = "dark_green", modifiers = [] }
+"string.path" = { fg = "mid_blue", modifiers = ["underlined"] }
+# "string.regexp" = "red"
+# "string.special" = "yellow"
+"comment" = { fg = "mid_grey", modifiers = ["italic"] }
+"comment.block" = { fg = "mid_grey", modifiers = ["italic", "bold"] }
+"comment.unused" = { underline = { style = "curl", color = "sand" } }
+"variable" = { fg = "dark_sand" }
+"variable.other.member" = { fg = "dark_grey" }
+"constructor" = "dark_grey"
+"variable.builtin" = { fg = "dark_sand", modifiers = ["bold"] }
+# "label" = "reduu"
+"punctuation" = "black"
+"keyword" = "purple"
+"keyword.function" = { fg = "dark_blue", modifiers = ["bold"] }
+"keyword.control.return" = { bg = "sand" }
+"keyword.control.repeat" = { fg = "red" }
+# "operator" = "orange"
+"function" = { fg = "dark_blue" }
+"function.builtin" = { fg = "dark_blue", modifiers = ["bold"] }
+"function.macro" = { fg = "dark_blue", modifiers = ["italic", "bold"] }
+# "keyword.storage" = "dark_green"
+# "keyword.storage.modifier" = { fg = "red", modifiers = ["underlined"] }
+# "tag" = "blue"
+# "namespace" = "blue"
+# # My Ruby Things
+# "string.special.symbol" = "green"
+# "function.method" = "blue"
+# "variable.other.member" = "red"
+# "variable.parameter" = "orange"
+# "toml.variable.other.member" = "black"
+
+# Interface
+
+"ui.background" = { bg = "paper" }
+"ui.bufferline" = { fg = "mid_blue", bg = "dark_blue" }
+"ui.bufferline.active" = { fg = "black", bg = "sand" }
+"ui.cursor" = { fg = "sand", bg = "mid_blue" }
+"ui.cursor.match" = { bg = "pale_blue", fg = "black", modifiers = [
+  "slow_blink",
+] }
+"ui.linenr" = "light_grey"
+"ui.linenr.selected" = "dark_grey"
+"ui.popup" = { fg = "dark_grey", bg = "sand" }
+"ui.window" = { fg = "dark_grey", bg = "sand" }
+"ui.help" = { fg = "black", bg = "sand" }
+"ui.menu" = { fg = "dark_grey", bg = "sand" }
+"ui.menu.selected" = { fg = "pale_blue", bg = "dark_blue" }
+"ui.menu.scroll" = { fg = "mid_grey", bg = "dark_grey" }
+"ui.selection" = { bg = "pale_blue", fg = "black" }
+"ui.statusline" = { fg = "pale_blue", bg = "dark_blue" }
+"ui.virtual.indent-guide" = { fg = "light_grey" }
+"ui.virtual.ruler" = { bg = "pale_blue" }
+# "ui.cursor.primary" = { fg = "white", bg = "orange" }
+# "ui.cursorline" = { bg = "gray" }
+# "ui.help" = { fg = "sand", bg = "black" }
+# "ui.menu" = { fg = "black", bg = "white" }
+# "ui.menu.selected" = { bg = "gray", fg = "black" }
+# "ui.statusline.insert" = { fg = "black", bg = "orange" }
+# "ui.statusline.normal" = { fg = "black", bg = "blue" }
+# "ui.statusline.select" = { fg = "black", bg = "magenta" }
+# "ui.text" = "foreground"
+# "ui.text.focus" = { bg = "dark_gray", fg = "foreground" }
+# "ui.text.info" = "foreground"
+# "ui.virtual.inlay-hint" = { fg = "black", bg = "white" }  # bg original #ffaa3333
+# "ui.virtual.whitespace" = "red"
+# "ui.window" = "black"
+# "ui.debug" = { fg = "orange"  }
+# "ui.highlight.frameline" = { bg = "#cfe0f2" }
+
+"diagnostic.hint" = { underline = { color = "mid_blue", style = "dotted" } }
+"diagnostic.info" = { underline = { color = "mid_blue", style = "dashed" } }
+"diagnostic.warning" = { underline = { color = "pale_red", style = "line" } }
+"diagnostic.error" = { fg = "black", bg = "pale_red", underline = { color = "red", style = "curl" } }
+
+# Gutter
+"warning" = { fg = "dark_sand" }
+"error" = { fg = "red" }
+"info" = { fg = "gray" }
+"hint" = { fg = "blue" }
+"diff.plus" = { fg = "green" }
+"diff.minus" = { fg = "red" }
+"diff.delta" = { fg = "yellow" }
+
+# "special" = "orange"
+
+# "markup" = { bg = "sand" }
+# "markup.heading" = { fg = "black", bg = "sand", modifiers = ["bold"] }
+# # "markup.list" = "yellow"
+# "markup.bold" = { modifiers = ["bold"] }
+# "markup.italic" = { modifiers = ["italic"] }
+# "markup.strikethrough" = { modifiers = ["crossed_out"] }
+# "markup.link.url" = { fg = "mid_blue", modifiers = ["underlined"] }
+# "markup.link.text" = "dark_blue"
+# "markup.link.label" = "dark_green"
+# "markup.quote" = "purple"
+# "markup.raw" = { fg = "mid_grey", modifiers = ["bold"] }
+
+[palette]
+black = "#000000"
+paper = "#efeded"
+white = "#ffffff"
+# blue = "#4271ae"
+pale_blue = "#b6d7ea"
+mid_blue = "#6da7ce"
+dark_blue = "#276589"
+
+purple = "#845db7"
+
+red = "#ba452e"
+pale_red = "#f29697"
+dark_green = "#22754e"
+pale_green = "#8ee5a2"
+# cyan = "#3e999f"
+light_grey = "#bac2c6"
+mid_grey = "#999999"
+dark_grey = "#5c666d"
+# gray = "#d6d6d6"
+# green = "#718c00"
+# magenta = "#8959a8"
+# orange = "#ce946d"
+# red = "#c82829"
+# yellow = "#eab700"
+sand = "#e8dbcc"
+dark_sand = "#a08214"

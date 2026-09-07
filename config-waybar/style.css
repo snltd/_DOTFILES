@@ -1,0 +1,32 @@
+* {
+    font-family: "Nerd Font", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #222222;
+    padding: 2px 5px;
+}
+
+/* Workspaces (left) */
+#sway-workspaces {
+    margin-right: 10px;
+}
+
+#clock {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#pulseaudio {
+    margin-left: 10px;
+}
+
+#pulseaudio:hover {
+    color: #00ff00;
+}
+
+#custom-gammastep.on {
+    color: #f9e2af;
+}
+#custom-gammastep.off {
+    color: #6c7086;
+}

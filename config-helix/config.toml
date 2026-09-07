@@ -1,0 +1,81 @@
+# theme = "tomorrow"
+# theme = "catppuccin_latte"
+# theme = "tokyonight_day"
+# theme = "darcula-solid"
+# theme = "solarized_light"
+# theme = "rob"
+theme = "rob"
+# theme = "solarized_light"
+# theme = "tokyonight_day"
+# theme = "zed_onelight"
+
+[editor]
+line-number = "absolute"
+scroll-lines = 1
+auto-pairs = false
+auto-format = true
+rulers = [80]
+bufferline = "multiple"
+mouse = false
+true-color = true
+undercurl = true
+idle-timeout = 0
+end-of-line-diagnostics = "disable"
+
+[editor.inline-diagnostics]
+cursor-line = "disable"
+
+[editor.cursor-shape]
+insert = "underline"
+normal = "block"
+select = "block"
+
+[editor.file-picker]
+hidden = true
+
+[editor.lsp]
+display-messages = true
+display-inlay-hints = false
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25
+
+[editor.smart-tab]
+enable = false
+
+[editor.search]
+smart-case = true
+wrap-around = true
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1
+
+[keys.normal]
+g = { a = "code_action" }
+"ret" = ["move_line_down", "goto_first_nonwhitespace"]
+X = "extend_line_above"
+D = "delete_char_backward"
+H = "goto_previous_buffer"
+L = "goto_next_buffer"
+"C-l" = ":redraw"
+"C-r" = ":reload-all"
+"C-e" = ":fmt"
+# move/copy line below/above
+"A-j" = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+"A-k" = [
+  "extend_to_line_bounds",
+  "delete_selection",
+  "move_line_up",
+  "paste_before",
+]
+"A-J" = ["extend_to_line_bounds", "yank", "paste_after"]
+"A-K" = ["extend_to_line_bounds", "yank", "paste_before"]
+"C-q" = [":write", ":theme rob"]
+[keys.insert]
+"C-q" = [":write", ":theme rob"]
+
+[keys.normal.space]
+"H" = ":toggle lsp.display-inlay-hints"

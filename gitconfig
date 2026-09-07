@@ -1,0 +1,25 @@
+[user]
+	name = snltd
+	email = github@id264.net
+	signingkey = ~/.ssh/id_ed25519_github
+[credential]
+	helper = cache --timeout=3600
+[push]
+	default = current
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = /home/rob/.ssh/allowed_signers
+[alias]
+	co = checkout
