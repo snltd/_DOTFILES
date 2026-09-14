@@ -1,7 +1,6 @@
 set -g fish_greeting
-
-set _os (uname -s)
 set -g _hostname (uname -n)
+set _os (uname -s)
 
 fish_add_path --prepend ~/bin/$_os \
     ~/bin \
@@ -15,6 +14,7 @@ switch $_os
         alias ff-update "rm -fr $HOME/Library/Caches/Mozilla/updates"
         /opt/homebrew/bin/brew shellenv | source
         fish_add_path /Applications/Docker.app/Contents/Resources/bin
+        fish_add_path --append ~/.docker/bin
 
     case Linux
         alias pbcopy='xclip -selection clipboard'
