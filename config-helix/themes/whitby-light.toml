@@ -1,3 +1,6 @@
+# A light theme which reminded me of walking on the beach at Whitby.
+# Geared towards Rust and Lisp.
+ 
 # Syntax highlighting
 "type" = { fg = "dark_green" }
 "type.builtin" = { fg = "dark_green", modifiers = ["italic"] }
