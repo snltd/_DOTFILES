@@ -20,7 +20,6 @@ name = "go"
 roots = ["go.work", "go.mod"]
 auto-format = true
 language-servers = ["gopls"]
-formatter = { command = "sh", args = ["-c", "gofumpt | goimports"] }
 
 [[language]]
 name = "hcl"
