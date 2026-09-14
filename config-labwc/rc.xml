@@ -65,9 +65,17 @@
     </context>
   </mouse>
   <theme>
-    <name>Boron-light</name>
-    <titlebar>
-      <layout>close,max,iconify:</layout>
-    </titlebar>
+    <font place="ActiveWindow">
+      <name>Roboto</name>
+      <size>13</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
+    <font place="InactiveWindow">
+      <name>Roboto</name>
+      <size>13</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
   </theme>
 </labwc_config>
