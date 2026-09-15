@@ -12,6 +12,7 @@ abbr gq geeqie
 abbr --position=anywhere gh "$HOME/github.com/snltd"
 abbr hhx 'hx --hsplit'
 abbr hvx 'hx --vsplit'
+abbr k kubectl
 abbr mp mplayer
 abbr pp 'img-tool file'
 abbr v vid-tool
