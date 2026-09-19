@@ -65,6 +65,10 @@
     </context>
   </mouse>
   <theme>
+    <titlebar>
+      <layout>close,max,shade:icon</layout>
+    </titlebar>
+    <dropShadows>yes</dropShadows>
     <font place="ActiveWindow">
       <name>Roboto</name>
       <size>13</size>
