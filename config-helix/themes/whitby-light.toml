@@ -1,6 +1,6 @@
 # A light theme which reminded me of walking on the beach at Whitby.
 # Geared towards Rust and Lisp.
- 
+
 # Syntax highlighting
 "type" = { fg = "dark_green" }
 "type.builtin" = { fg = "dark_green", modifiers = ["italic"] }
@@ -59,6 +59,7 @@
 "ui.menu.scroll" = { fg = "mid_grey", bg = "dark_grey" }
 "ui.selection" = { bg = "pale_blue", fg = "black" }
 "ui.statusline" = { fg = "pale_blue", bg = "dark_blue" }
+"ui.text.focus" = { bg = "sand" }
 "ui.virtual.indent-guide" = { fg = "light_grey" }
 "ui.virtual.ruler" = { bg = "pale_blue" }
 # "ui.cursor.primary" = { fg = "white", bg = "orange" }
