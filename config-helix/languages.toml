@@ -36,10 +36,17 @@ auto-format = false
 formatter = { command = "janet-format", args = ["-"] }
 
 [[language]]
-name = "javascript"
+name = "typescript"
 language-servers = ["typescript-language-server"]
 auto-format = true
-formatter = { command = "prettier", args = ["--parser", "babel"] }
+formatter = { command = "dprint", args = ["fmt", "--stdin", "typescript"] }
+
+[[language]]
+name = "svelte"
+file-types = ["svelte"]
+language-servers = ["typescript-language-server"]
+auto-format = true
+formatter = { command = "dprint", args = ["fmt", "--stdin", "svelte"] }
 
 [[language]]
 name = "json"
@@ -47,18 +54,11 @@ formatter = { command = "dprint", args = ["fmt", "--stdin", "json"] }
 auto-format = true
 
 [[language]]
-name = "jsx"
-language-servers = ["typescript-language-server"]
-auto-format = true
-formatter = { command = "prettier", args = ["--parser", "babel"] }
-
-[[language]]
 name = "markdown"
 file-types = ["md"]
 language-servers = ["mdlsp", "typos-lsp"]
 auto-format = false
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
-
 
 [[language]]
 name = "python"
@@ -71,7 +71,6 @@ formatter = { command = "ruff", args = [
   "--stdin-filename",
   "-",
 ] }
-
 
 [[language]]
 name = "ruby"
@@ -93,18 +92,17 @@ language-servers = ["rust-analyzer"]
 rulers = [100]
 
 [[language]]
+name = "sql"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "sql"] }
+auto-format = true
+
+[[language]]
 name = "toml"
 language-servers = ["tombi"]
 # formatter = { command = "tombi", args = ["format", "-"] }
 
 [[language]]
 name = "typescript"
-language-servers = ["typescript-language-server"]
-auto-format = true
-formatter = { command = "prettier", args = ["--parser", "typescript"] }
-
-[[language]]
-name = "tsx"
 language-servers = ["typescript-language-server"]
 auto-format = true
 formatter = { command = "prettier", args = ["--parser", "typescript"] }
