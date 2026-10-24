@@ -7,7 +7,7 @@ fish_add_path --prepend ~/bin/$_os \
     ~/.cargo/bin \
     ~/go/bin \
     ~/.rbenv/bin \
-    ~/.janet/bin
+    ~/.janet/bin ~/.janet/lib/janet/bin
 
 switch $_os
     case Darwin
