@@ -1,3 +1,7 @@
+# The following lines were added by Docker Desktop to add commands to your PATH.
+export PATH="$PATH:/Users/RFisher/.docker/bin"
+# End of Docker Desktop section.
+
 set -g fish_greeting
 set -g _hostname (uname -n)
 set _os (uname -s)
