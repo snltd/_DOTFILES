@@ -52,7 +52,7 @@
 "ui.linenr" = "light_grey"
 "ui.linenr.selected" = "dark_grey"
 "ui.popup" = { fg = "dark_grey", bg = "sand" }
-"ui.window" = { fg = "dark_grey", bg = "sand" }
+"ui.window" = { fg = "dark_blue", bg = "sand" }
 "ui.help" = { fg = "black", bg = "sand" }
 "ui.menu" = { fg = "dark_grey", bg = "sand" }
 "ui.menu.selected" = { fg = "pale_blue", bg = "dark_blue" }
@@ -75,7 +75,6 @@
 # "ui.text.info" = "foreground"
 # "ui.virtual.inlay-hint" = { fg = "black", bg = "white" }  # bg original #ffaa3333
 # "ui.virtual.whitespace" = "red"
-# "ui.window" = "black"
 # "ui.debug" = { fg = "orange"  }
 # "ui.highlight.frameline" = { bg = "#cfe0f2" }
 

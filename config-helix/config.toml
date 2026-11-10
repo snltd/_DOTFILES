@@ -2,10 +2,10 @@
 # theme = "catppuccin_latte"
 # theme = "tokyonight_day"
 # theme = "darcula-solid"
-# theme = "solarized_light"
+# theme = "solarized_dark"
 # theme = "rob"
-theme = "whitby-light"
-# theme = "solarized_light"
+theme = "whitby-dark"
+# theme = "solarized_dark"
 # theme = "tokyonight_day"
 # theme = "zed_onelight"
 
