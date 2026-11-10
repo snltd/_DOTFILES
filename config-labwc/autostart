@@ -1,3 +1,4 @@
+wlr-randr --output HDMI-A-1 --transform 270
 
 swayidle -w \
 	timeout 300 'swaylock -f -c 000000' \
