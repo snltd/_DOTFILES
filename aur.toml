@@ -131,26 +131,26 @@ inconsistent_tags = [
   "albums/tuv/talking_heads.bonus_tracks",
   "albums/tuv/thee_headcoats.elementary_headcoats/",
   "albums/tuv/u2.rattle_and_hum",
-  "audiobooks/john_le_carre.george_smiley",
-  "audiobooks/agatha_christie.bbc_radio_4--hercule_poirot",
+  "albums/various/townhall_orchestra.second_fanfare_for_the_elephant_six",
+  "albums/various/townhall_orchestra.second_fanfare_for_the_elephant_six",
   "christmas/albums/v-vm.the_v-vm_christmas_pudding",
   "christmas/eps/v-vm.whine_and_missingtoe",
   "christmas/eps/yellow6.merry6mas2007",
   "eps/def/ersatz_titanium_pizza.unfit_for_human_consumption",
   "eps/jkl/lavender_diamond.open_your_heart",
   "radio_sessions/quickspace.peel_sessions",
-  "radio_shows/bbc_radio_4.sherlock_holmes/",
+  "radio_shows/frank_sidebottom.story_of_pop",
+  "radio_shows/bbc_radio_4.sherlock_holmes",
   "radio_shows/chris_morris.glr_show",
   "radio_shows/chris_morris.no_known_cure",
   "radio_shows/frank_sidebottom.manchester_radio_online",
-  "spoken_word/agatha_christie.bbc_radio_4--hercule_poirot",
   "spoken_word/frank_sidebottom.radio_timperley",
-  "spoken_word/john_le_carre.george_smiley",
 ]
 
 bad_file_count = [
   "albums/abc/cracker.kerosene_hat",
   "albums/pqrs/stone_roses.second_coming",
+  "audiobooks/reginald_hill.dalziel_and_pascoe",
 ]
 
 [ignore.wantflac]
