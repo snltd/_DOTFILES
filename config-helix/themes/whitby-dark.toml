@@ -2,37 +2,40 @@
 # Geared towards Rust and Lisp.
 
 # Syntax highlighting
-"type" = { fg = "dark_green" }
+"type" = { fg = "mid_green" }
 "type.builtin" = { fg = "dark_green", modifiers = ["italic"] }
-# "type.enum" = { fg = "dark_green", modifiers = ["bold"] }
-"type.enum.variant" = { fg = "dark_green", modifiers = ["bold"] }
-"constant" = { fg = "dark_sand", modifiers = ["bold"] }
-"string" = { fg = "dark_red", modifiers = ["italic"] }
+"type.enum" = { fg = "dark_green", modifiers = ["bold"] }
+"type.enum.variant" = { fg = "dark_green", modifiers = ["bold", "italic"] }
+"type.parameter" = { fg = "red" }
+"constant" = { fg = "amber", modifiers = ["bold"] }
+"string" = { fg = "dark_blue", modifiers = ["italic"] }
 "string.special.symbol" = { fg = "dark_green", modifiers = [] }
-"string.path" = { fg = "mid_blue", modifiers = ["underlined"] }
+"string.path" = { fg = "dark_blue", modifiers = ["underlined"] }
+"attribute" = "mid_green"
 # "string.regexp" = "red"
 # "string.special" = "yellow"
 "comment" = { fg = "dark_grey", modifiers = ["italic"] }
 "comment.block" = { fg = "dark_grey", modifiers = ["italic", "bold"] }
 "comment.unused" = { underline = { style = "curl", color = "sand" } }
 "variable" = { fg = "dark_sand" }
-"variable.other.member" = { fg = "dark_grey" }
-"constructor" = "mid_grey"
+"variable.other.member" = { fg = "sand" }
+"constant.numeric" = "mid_green"
+"constructor" = "amber"
 "variable.builtin" = { fg = "dark_sand", modifiers = ["bold"] }
-# "label" = "reduu"
-"punctuation" = "dark_grey"
-"keyword" = "purple"
-"keyword.function" = { fg = "dark_blue", modifiers = ["bold"] }
+"label" = "red"
+"punctuation" = "light_grey"
+"keyword" = "amber"
+"keyword.function" = { fg = "mid_blue", modifiers = ["bold"] }
 "keyword.control.return" = { bg = "sand" }
 "keyword.control.repeat" = { fg = "red" }
 # "operator" = "orange"
-"function" = { fg = "dark_blue" }
-"function.builtin" = { fg = "dark_blue", modifiers = ["bold"] }
-"function.macro" = { fg = "dark_blue", modifiers = ["italic", "bold"] }
-# "keyword.storage" = "dark_green"
-# "keyword.storage.modifier" = { fg = "red", modifiers = ["underlined"] }
+"function" = { fg = "mid_blue" }
+"function.builtin" = { fg = "mid_blue", modifiers = ["bold"] }
+"function.macro" = { fg = "mid_blue", modifiers = ["italic", "bold"] }
+"keyword.storage" = "purple"
+"keyword.storage.modifier" = { fg = "red" }
 # "tag" = "blue"
-# "namespace" = "blue"
+"namespace" = "dark_green"
 # # My Ruby Things
 # "string.special.symbol" = "green"
 # "function.method" = "blue"
@@ -46,7 +49,7 @@
 "ui.bufferline" = { fg = "dark_sand", bg = "very_dark_grey" }
 "ui.bufferline.active" = { fg = "black", bg = "dark_sand" }
 "ui.cursor" = { fg = "sand", bg = "purple" }
-"ui.cursor.match" = { bg = "pale_blue", fg = "black", modifiers = [
+"ui.cursor.match" = { bg = "mid_blue", fg = "black", modifiers = [
   "slow_blink",
 ] }
 "ui.linenr" = "dark_grey"
@@ -92,7 +95,7 @@
 "diff.minus" = { fg = "red" }
 "diff.delta" = { fg = "yellow" }
 
-# "special" = "orange"
+"special" = { fg = "dark_sand", modifiers = ["bold"] }
 
 # "markup" = { bg = "sand" }
 # "markup.heading" = { fg = "black", bg = "sand", modifiers = ["bold"] }
@@ -107,24 +110,26 @@
 # "markup.raw" = { fg = "mid_grey", modifiers = ["bold"] }
 
 [palette]
-black = "#000000"
-paper = "#efeded"
+# black = "#000000"
+# paper = "#efeded"
 white = "#ffffff"
-night_sky = "#001214"
+night_sky = "#050200"
 # blue = "#4271ae"
 pale_blue = "#b6d7ea"
-mid_blue = "#6da7ce"
+mid_blue = "#5e89b2"
 dark_blue = "#276589"
 
-purple = "#845db7"
+purple = "#a570c1"
 dark_purple = "#542d97"
 
-red = "#ba452e"
+red = "#af4e33"
 pale_red = "#f29697"
-dark_red= "#622627"
-dark_green = "#12552e"
+dark_red = "#af4e33"
+
+dark_green = "#4e7c3a"
+mid_green = "#31c462"
 pale_green = "#8ee5a2"
-# cyan = "#3e999f"
+
 light_grey = "#bac2c6"
 mid_grey = "#999999"
 dark_grey = "#5c666d"
@@ -132,8 +137,8 @@ very_dark_grey = "#1c262d"
 # gray = "#d6d6d6"
 # green = "#718c00"
 # magenta = "#8959a8"
-# orange = "#ce946d"
+amber = "#c4b63c"
 # red = "#c82829"
 # yellow = "#eab700"
-sand = "#e8dbcc"
-dark_sand = "#a08214"
+sand = "#bc9b58"
+dark_sand = "#967940"
