@@ -23,6 +23,6 @@
     "https://plugins.dprint.dev/g-plane/malva-v0.15.3.wasm",
     "npm:dprint-plugin-markup@0.27.5",
     "https://plugins.dprint.dev/g-plane/pretty_yaml-v0.6.0.wasm",
-    "https://plugins.dprint.dev/sql-0.3.0.wasm"
+    "npm:@dprint/sql@0.5.0"
   ]
 }
