@@ -14,7 +14,7 @@
     <default/>
     <keybind key="W-Space">
       <action name="Execute">
-        <command>rofi -show drun</command>
+        <command>rofi -show combi -modes combi -combi-modes "drun,ssh"</command>
       </action>
     </keybind>
     <keybind key="W-b">
