@@ -9,7 +9,7 @@ local light_theme = 'Catppuccin Latte'
 -- local dark_theme = 'Solarized Dark (Gogh)'
 
 local function scheme_for_appearance(appearance)
-  return dark_theme
+  return light_theme
 end
 
 local config = wezterm.config_builder()
